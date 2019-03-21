@@ -5,4 +5,8 @@ Watch On Youtube :- https://youtu.be/-sk20jry978
 
 ![images](https://user-images.githubusercontent.com/26626045/54752535-b8907600-4b9b-11e9-9517-e3ca46cdeffc.jpg)
 
+Preview :- 
+
+![Capture](https://user-images.githubusercontent.com/26626045/54752584-e675ba80-4b9b-11e9-8324-6dde621d2481.PNG)
+
 
