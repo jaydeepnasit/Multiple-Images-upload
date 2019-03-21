@@ -9,4 +9,7 @@ Preview :-
 
 ![Capture](https://user-images.githubusercontent.com/26626045/54752584-e675ba80-4b9b-11e9-8324-6dde621d2481.PNG)
 
+View Images Preview :-
+
+![view](https://user-images.githubusercontent.com/26626045/54752649-2472de80-4b9c-11e9-8f7c-d17c57893083.PNG)
 
