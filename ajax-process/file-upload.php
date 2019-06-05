@@ -16,6 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $file_size = $_FILES['imgfile']['size'];
 
         $accept_image = array("image/png", "image/jpeg", "image/gif");
+        $accept_ext = array('png', 'jpg', 'jpeg', 'gif');
         $total_image = count($file_name);
 
         if($total_image <= 15){
@@ -32,9 +33,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                     if($file_size[$i] <= 2097152){
 
-                        if(in_array($file_type[$i], $accept_image)){
+                        $img_file_ext = strtolower(pathinfo($file_name[$i], PATHINFO_EXTENSION));
 
-                            $img_file_ext = strtolower(pathinfo($file_name[$i], PATHINFO_EXTENSION));
+                        if(in_array($file_type[$i], $accept_image) && in_array($img_file_ext, $accept_ext) && @getimagesize($file_location[$i])){
+
                             $img_new_file_name = trim(strtolower(pathinfo($file_name[$i], PATHINFO_BASENAME)));
                             $img_new_file_name = mt_rand(10000000, 99999999).time().date('ymdhis').'.'.$img_file_ext;
                             
